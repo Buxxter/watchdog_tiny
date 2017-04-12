@@ -124,6 +124,7 @@ uint16_t str_to_b_uint16(uint8_t *str)
 	return result;
 }
 
+
 char* str_uint16_to_str(uint16_t num)
 {
 	uint8_t i;
@@ -155,7 +156,7 @@ char* str_uint16_to_str(uint16_t num)
 		len = 5;
 	}
 	
-	char str[len];
+	char str[len+1];
 	str[len] = '\0';
 	for(i=(len-1); i>=0; i--){
 		str[i] = '0' + num % 10;
@@ -163,3 +164,5 @@ char* str_uint16_to_str(uint16_t num)
 	}
 	return str;
 }
+
+

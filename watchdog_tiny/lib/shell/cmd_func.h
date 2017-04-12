@@ -23,7 +23,7 @@ responsibility on anything that could happen while using this code.
 #include "../relay/relay.h"
 
 //Total functions number
-#define FUNC_NUM        3
+#define FUNC_NUM        2
 
 //Function and command tables
 extern void (*sys_func[FUNC_NUM])(uint8_t* p_arg[],uint8_t num_args);
